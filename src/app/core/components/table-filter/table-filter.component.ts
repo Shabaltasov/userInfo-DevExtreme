@@ -16,7 +16,6 @@ export class TableFilterComponent implements OnInit {
     city: false,
     street: false,
     email: false,
-    phone: false
   };
 
   constructor(private userDataService: UserDataService) {
