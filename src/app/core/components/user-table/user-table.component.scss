@@ -1,0 +1,52 @@
+::ng-deep .dx-button-text {
+  display: none;
+}
+::ng-deep .dx-hidden {
+  display: none;
+}
+
+::ng-deep .master-detail-caption {
+  padding: 0 0 5px 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+::ng-deep .dx-selection-disabled {
+  height: 50px;
+  background-image: url("../../../../assets/icons/info.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+::ng-deep .dx-command-expand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+
+::ng-deep .dx-command-expand :active {
+  border: none;
+}
+
+::ng-deep .dx-datagrid-headers  {
+
+  display: flex;
+  justify-content: space-between;
+}
+::ng-deep .dx-datagrid-text-content {
+  cursor: pointer;
+  margin-right: 40px;
+  font-size: 20px;
+  font-weight: 40;
+}
+::ng-deep .dx-menu-horizontal, .dx-command-expand{
+  display: none;
+}
+
+
+
+
+

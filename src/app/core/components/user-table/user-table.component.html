@@ -1,0 +1,35 @@
+<div class="container">
+  <dx-data-grid
+    [dataSource]="users"
+    [columnAutoWidth]="true"
+    [showBorders]="true"
+    [filterRow]="{ visible: true }"
+    [paging]="{ pageSize: 25 }"
+  >
+    <dxo-export [enabled]="true" [formats]="['jpg']"></dxo-export>
+    <dxo-paging [pageSize]="25"></dxo-paging>
+    <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[25, 50, 100]"></dxo-pager>
+    <dxo-search-panel [width]="240"></dxo-search-panel>
+    <dxi-column class="my_column" dataField="picture.large" caption="Picture" cellTemplate="cellTemplate">
+    </dxi-column>
+    <div *dxTemplate="let userPicture of 'cellTemplate'">
+      <img src="{{userPicture.value}}">
+    </div>
+    <dxi-column class="my_column" dataField="name.first" caption="First Name"></dxi-column>
+    <dxi-column class="my_column" dataField="name.last" caption="Last Name"></dxi-column>
+    <dxi-column class="my_column" dataField="gender" caption="Gender"></dxi-column>
+    <dxi-column class="my_column" dataField="phone" caption="Phone" [visible]="true"></dxi-column>
+    <dxo-master-detail [enabled]="true" template="userDetail"></dxo-master-detail>
+    <div *dxTemplate="let user of 'userDetail'">
+      <div class="master-detail-caption">City: {{
+        user.data.location.city
+        }}</div>
+      <div class="master-detail-caption">Street: {{
+        user.data.location.street.name
+        }}</div>
+      <div class="master-detail-caption">Email: {{
+        user.data.email
+        }}</div>
+    </div>
+  </dx-data-grid>
+</div>

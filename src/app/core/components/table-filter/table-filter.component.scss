@@ -1,0 +1,25 @@
+.filters-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+
+  .form-check {
+    margin: 10px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  &-input {
+    width: 30px;
+    height: 30px;
+  }
+
+    &-label {
+      font-size: 30px;
+      font-weight: 60;
+      color: white;
+    }
+  }
+}

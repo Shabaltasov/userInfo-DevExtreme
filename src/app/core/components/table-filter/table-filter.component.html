@@ -1,0 +1,33 @@
+<div class="filters-container">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="genderCheckbox" (click)="onGenderChange()" [checked] ="selectedFilters.gender" >
+    <label class="form-check-label" for="genderCheckbox">
+      Gender
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="cityCheckbox" (click)="onCityChange()" [checked] ="selectedFilters.city">
+    <label class="form-check-label" for="cityCheckbox">
+      City
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="streetCheckbox" (click)="onStreetChange()" [checked] ="selectedFilters.street">
+    <label class="form-check-label" for="streetCheckbox">
+      Street
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="emailCheckbox" (click)="onEmailChange()" [checked] ="selectedFilters.email">
+    <label class="form-check-label" for="emailCheckbox">
+      Email
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="phoneCheckbox" (click)="onPhoneChange()" [checked] ="selectedFilters.phone">
+    <label class="form-check-label" for="phoneCheckbox">
+      Phone
+    </label>
+  </div>
+</div>
+
